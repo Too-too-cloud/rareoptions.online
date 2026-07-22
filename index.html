@@ -3,42 +3,126 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rare Options</title>
+<title>Rare Options - Options Trading Insights</title>
 <style>
+  * { box-sizing: border-box; }
   body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
     background: #0d1117;
     color: #e6edf3;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
   }
-  header {
-    padding: 40px 20px;
-    text-align: center;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
     border-bottom: 1px solid #30363d;
   }
-  header h1 {
-    margin: 0;
-    font-size: 2.2em;
+  nav .logo {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #e6edf3;
+    text-decoration: none;
   }
-  header p {
+  nav a {
     color: #8b949e;
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 0.95em;
   }
-  main {
-    flex: 1;
+  nav a:hover { color: #58a6ff; }
+
+  .hero {
+    text-align: center;
+    padding: 80px 20px 60px;
+  }
+  .hero h1 {
+    font-size: 2.6em;
+    margin-bottom: 10px;
+  }
+  .hero p {
+    color: #8b949e;
+    font-size: 1.15em;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .hero .badge {
+    display: inline-block;
+    background: #1f6feb33;
+    color: #58a6ff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    margin-bottom: 20px;
+  }
+
+  section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  section h2 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+  }
+  .feature-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    padding: 24px;
+  }
+  .feature-card h3 {
+    margin-top: 0;
+    color: #58a6ff;
+    font-size: 1.1em;
+  }
+  .feature-card p {
+    color: #8b949e;
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+
+  .about p {
+    color: #c9d1d9;
+    line-height: 1.7;
     max-width: 700px;
-    margin: 40px auto;
-    padding: 0 20px;
-    line-height: 1.6;
+    margin: 0 auto;
   }
+
+  .contact {
+    text-align: center;
+  }
+  .contact a.email-btn {
+    display: inline-block;
+    background: #238636;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
   footer {
     text-align: center;
-    padding: 20px;
+    padding: 24px;
     font-size: 0.9em;
     color: #8b949e;
     border-top: 1px solid #30363d;
+    margin-top: 40px;
   }
   footer a {
     color: #58a6ff;
@@ -49,15 +133,49 @@
 </head>
 <body>
 
-<header>
-  <h1>Rare Options</h1>
-  <p>Insights and information on options trading</p>
-</header>
+<nav>
+  <a class="logo" href="index.html">Rare Options</a>
+  <div>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-<main>
-  <h2>Welcome</h2>
-  <p>Rare Options is dedicated to helping traders understand options trading concepts, strategies, and market insights. This site is currently under construction — check back soon for more content.</p>
-</main>
+<div class="hero">
+  <div class="badge">🚧 Building in public</div>
+  <h1>Rare Options</h1>
+  <p>Clear, practical insights on options trading — strategies, risk management, and market thinking, without the hype.</p>
+</div>
+
+<section id="features">
+  <h2>What We're Building</h2>
+  <div class="features">
+    <div class="feature-card">
+      <h3>Strategy Guides</h3>
+      <p>Plain-English breakdowns of options strategies, from covered calls to spreads, with real risk/reward context.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Market Insights</h3>
+      <p>Commentary on market conditions and how they affect options pricing and volatility.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Risk Management</h3>
+      <p>Frameworks for position sizing and managing downside — because surviving matters more than one big win.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>About Rare Options</h2>
+  <p>Rare Options is a work in progress — a place to share honest, practical thinking about options trading. No get-rich-quick promises, just clear explanations and useful frameworks for traders who want to understand what they're actually doing.</p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Get in Touch</h2>
+  <p>Questions, feedback, or ideas? Reach out.</p>
+  <a class="email-btn" href="mailto:contact@rareoptions.online">Email Us</a>
+</section>
 
 <footer>
   <a href="privacy.html">Privacy Policy</a>
